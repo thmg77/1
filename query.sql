@@ -26,10 +26,8 @@ manipulation operation.
  4. Partition the BOOK table based on year of publication. Demonstrate its working with a 
 simple query. 
 
-CREATE VIEW V_PUBLICATION AS 
-SELECT PUB_YEAR
-FROM BOOK
-SELECT * FROM V_PUBLICATION  
+CREATE VIEW VW_PUBLICATION AS SELECT PUB_YEAR FROM BOOK;
+SELECT * FROM VW_PUBLICATION;
 
 
 5. Create a view of all books and its number of copies that are currently available in the 
