@@ -1,43 +1,56 @@
-INSERT INTO PUBLISHER VALUES ( 'MCGRAW-HILL', 9989076587, 'BANGALORE'); 
-INSERT INTO PUBLISHER VALUES ('PEARSON', 9889076565, 'NEWDELHI'); 
-INSERT INTO PUBLISHER VALUES ('RANDOM HOUSE', 7455679345, 'HYDRABAD'); 
-INSERT INTO PUBLISHER VALUES ('HACHETTE LIVRE', 8970862340, 'CHENAI'); 
-INSERT INTO PUBLISHER VALUES ('GRUPO PLANETA', 7756120238, 'BANGALORE');
+#include<iostream.h>
+#include<fstrteam.h>
+#include<string.h>
+#include<cinio.h>
+#include<process.h>
+void main()
+{
+	char list[50],fname1[20],fname2[20];
+	int ch,n,i,j;
+	cout<<"enter your choice";
+	cout<<" 1.for std input/output\n";
+	cout<<"2.for file input/output\n";
+	cin>>ch;
+	switch(ch)
+	{
+		case 1:cout<<" enter the number of names you want to reverse:";
+		cin>>n;
+		for(i=1;i<=n;1++0)
+		cout<<" enter the name:"<<i<<":";
+		cin>>list;
+		len=strlen[list];
+		cout<<"reverse name:"<<i<<":";
+		for(j=len-1;j>=0;j--)
+		{
+			cout<<list[j];
+		}
+		cout<<endl;
+	}
+	break;
+	case 2: cout<<"enter the input file\n";
+	cin>>fname1;
+	cout<<" enter the output file\n";
+	cin>>fname2;
+	f1.open("fname1,ios::in")
+	f2.open("fname2.ios::out")
+	while(1)
+	{
+	
+	f1.get(list,15,'\n');
+	if(f1.fail())
+	break;
+	len=strlen[list]
+	for(i=0;i>=len-2;i--)
+	{
+		f2<<list[i];
+	}
+	f2<<endl;
+}
+{
+	f1.close();
+	f2.close();
+	break;
+}
+getch();
 
-INSERT INTO BOOK VALUES (1,'DBMS','JAN-2017', 'MCGRAW-HILL'); 
-INSERT INTO BOOK VALUES (2,'ADBMS','JUN-2016', 'MCGRAW-HILL'); 
-INSERT INTO BOOK VALUES (3,'CN','SEP-2016', 'PEARSON'); 
-INSERT INTO BOOK VALUES (4,'CG','SEP-2015', 'GRUPO PLANETA'); 
-INSERT INTO BOOK VALUES (5,'OS','MAY-2016', 'PEARSON');
-
-INSERT INTO BOOK_AUTHORS VALUES ('NAVATHE', 1); 
-INSERT INTO BOOK_AUTHORS VALUES ('NAVATHE', 2); 
-INSERT INTO BOOK_AUTHORS VALUES ('TANENBAUM', 3); 
-INSERT INTO BOOK_AUTHORS VALUES ('EDWARD ANGEL', 4); 
-INSERT INTO BOOK_AUTHORS VALUES ('GALVIN', 5); 
-
-INSERT INTO LIBRARY_BRANCH VALUES (10,'RR NAGAR','BANGALORE'); 
-INSERT INTO LIBRARY_BRANCH VALUES (11,'RNSIT','BANGALORE'); 
-INSERT INTO LIBRARY_BRANCH VALUES (12,'RAJAJI NAGAR', 'BANGALORE'); 
-INSERT INTO LIBRARY_BRANCH VALUES (13,'NITTE','MANGALORE'); 
-INSERT INTO LIBRARY_BRANCH VALUES (14,'MANIPAL','UDUPI');
-
-INSERT INTO BOOK_COPIES VALUES (10, 1, 10); 
-INSERT INTO BOOK_COPIES VALUES (5, 1, 11); 
-INSERT INTO BOOK_COPIES VALUES (2, 2, 12); 
-INSERT INTO BOOK_COPIES VALUES (5, 2, 13); 
-INSERT INTO BOOK_COPIES VALUES (7, 3, 14); 
-INSERT INTO BOOK_COPIES VALUES (1, 5, 10); 
-INSERT INTO BOOK_COPIES VALUES (3, 4, 11); 
-
-INSERT INTO CARD VALUES (100); 
-INSERT INTO CARD VALUES (101); 
-INSERT INTO CARD VALUES (102); 
-INSERT INTO CARD VALUES (103); 
-INSERT INTO CARD VALUES (104);
-
-INSERT INTO BOOK_LENDING VALUES ('01-01-17','01-06-17', 1, 10, 101); 
-INSERT INTO BOOK_LENDING VALUES ('11-01-17','11-03-17', 3, 14, 101); 
-INSERT INTO BOOK_LENDING VALUES ('21-02-17','21-04-17', 2, 13, 101); 
-INSERT INTO BOOK_LENDING VALUES ('15-03-17','15-07-17', 4, 11, 101); 
-INSERT INTO BOOK_LENDING VALUES ('12-04-17','12-05-17', 1, 11, 104);
+}
